@@ -1,0 +1,27 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Team name: Xcessibility, for Codecademy Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantDesigns/hackathon.git"
+  },
+  "keywords": [
+    "hackathon",
+    "javascript",
+    "codecademy"
+  ],
+  "author": "Xcessibility",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantDesigns/hackathon/issues"
+  },
+  "homepage": "https://github.com/BryantDesigns/hackathon#readme",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}
