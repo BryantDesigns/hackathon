@@ -1,4 +1,4 @@
-@media (max-width:991px) {
+@media (max-width: 991px) {
     body.poster {
         margin-top: 60vh;
     }
@@ -10,4 +10,148 @@ body.poster {
 
 .top-5 {
     top: 5px;
+}
+
+/* Animate SVG About Page - Pair-programming */
+
+svg#pair-programming #sunset {
+    animation: 10000ms sunset infinite;
+}
+
+svg#pair-programming #clouds {
+    animation: 5000ms clouds infinite;
+}
+
+svg#pair-programming #leftperson #lefthand {
+    animation: 3000ms ease lefthand alternate infinite;
+}
+
+svg#pair-programming #leftperson #lefthead {
+    animation: 2000ms ease lefthead alternate infinite;
+}
+
+svg#pair-programming #hair {
+    animation: 2000ms ease hair alternate infinite;
+}
+
+svg#pair-programming #righthand {
+    animation: 2000ms ease righthand alternate infinite;
+}
+
+svg#pair-programming #rightarm {
+    animation: 2000ms ease rightarm alternate infinite;
+}
+
+svg#pair-programming #righthead {
+    animation: 2000ms ease righthead alternate infinite;
+}
+
+svg#pair-programming #screen {
+    animation-delay: calc(var(--animation-order) * 100ms);
+    animation: 60000ms linear screen both infinite;
+}
+
+@keyframes sunset {
+    0% {
+        transform: translateX(5%) translateY(-25%);
+    }
+    100% {
+        transform: translateX(-5%) translateY(50%);
+    }
+}
+
+@keyframes clouds {
+    0% {
+        fill: whitesmoke;
+        transform: translateX(-5%) translateY(-5%);
+    }
+    95% {
+        transform: translateX(5%) translateY(1%);
+
+        fill: coral;
+    }
+    100% {
+        fill: whitesmoke;
+    }
+}
+
+@keyframes lefthand {
+    0% {
+        transform: translateX(0%) translateY(0%);
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: translateX(-4.5%) translateY(-2%) rotateZ(-10deg);
+        transform-origin: bottom left;
+    }
+}
+
+@keyframes lefthead {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(1%) translateY(2%) rotateZ(-1deg);
+    }
+}
+
+@keyframes hair {
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+    100% {
+        transform: translateX(1%) translateY(2%) rotateZ(-1deg);
+    }
+}
+
+@keyframes rightarm {
+    0% {
+        transform: translateX(0%) translateY(0%);
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: translateX(-0.2%) translateY(-0.1%) rotateZ(-1deg);
+        transform-origin: bottom left;
+    }
+}
+
+@keyframes righthand {
+    0% {
+        transform: translateX(0%) translateY(0%);
+        transform-origin: bottom left;
+    }
+    100% {
+        transform: translateX(-0%) translateY(5%) rotateZ(-5deg);
+        transform-origin: bottom left;
+    }
+}
+
+@keyframes righthead {
+    0% {
+        transform: translateX(0%) translateY(0%);
+        transform-origin: top;
+    }
+    100% {
+        transform: translateX(-1%) translateY(2%) rotateZ(-1deg);
+        transform-origin: top;
+    }
+}
+
+@keyframes screen {
+    0% {
+        transform: translateX(0.25%) translateY(-4%);
+        /* stroke: crimson; */
+        stroke-width: 1;
+        stroke: darkgoldenrod;
+        /* fill-opacity: 0; */
+    }
+    50% {
+        transform: translateX(1%) translateY(7.5%);
+    }
+    75% {
+        /* stroke: firebrick; */
+    }
+    100% {
+        /* fill-opacity: 0; */
+    }
 }
